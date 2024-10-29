@@ -1,0 +1,1 @@
+- Bryt upp koden som varsin funktion

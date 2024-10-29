@@ -1,0 +1,27 @@
+[project]
+name = "aix"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "bennyandren", email = "external.benny.andren@inter.ikea.com" }
+]
+dependencies = [
+    "openai>=1.40.6",
+    "ipykernel>=6.29.5",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aix"]
